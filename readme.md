@@ -136,4 +136,20 @@ router.delete('/api/:id', (request, response) => {
 module.exports = router;
 
 ```
+### CRIAÇÃO DE CONTROLLERS
+* Arquivos para processar as requisições das rotas
+
+<hr>
+
+### Criar pasta de controllers
+
+```
+mkdir src/controllers
+```
+
+### Criar arquivo controller.js
+
+```
+touch src/controllers/controller.js
+```
 

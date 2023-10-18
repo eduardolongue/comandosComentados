@@ -1,4 +1,3 @@
-
 // Importar pacote do express
 const { Router } = require("express");
 // Instanciar o Router na variável router
