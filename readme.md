@@ -89,6 +89,7 @@ touch .env
 ```
 touch .env.example
 ```
+<<<<<<< HEAD
 * Criar pasta routes
 ```
 mkdir routes
@@ -209,4 +210,55 @@ connection.connect( (err) =>{
 });
 
 module.exports = connection;
+=======
+
+
+* Criar pasta router 
+
+```
+mkdir routes
+```
+
+* Criar arquivo crudeRoute.js dentro da pasta routes
+
+```
+nano crudRouter.js
+```
+passos para gerenciar um arquivo com nano
+### Ctrl + o: salva o arquivo
+### Enter: Confirmar nome do arquivo
+### Ctrl + X: Fechar o Arquivo
+
+* Digitar o código no arquivo criado
+
+```
+// Importar pacote do express
+const { Router } = require("express");
+// Instanciar o Router na variável router
+const router = Router();
+
+router.get('/api', (request, response) => {
+    response.send('Retorno de Informações do banco de dados');
+    console.log('get')
+});
+
+router.post('/api', (request, response) => {
+    response.send('Método utilizado para salvar informações!');
+    console.log('post')
+    console.log(request)
+});
+
+router.put('/api/:id', (request, response) => {
+    response.send('Método utilizado para editar informações!');
+    console.log('put')
+    console.log('id: ', request.params.id)
+});
+
+router.delete('/api/:id', (request, response) => {
+    response.send('Método utilizado para deletar informações!');
+    console.log('delete')
+});
+
+module.exports = router;
+>>>>>>> ca5d5da10eedd93cb4bbaaf0441be9b315351a80
 ```
