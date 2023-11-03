@@ -89,7 +89,7 @@ touch .env
 ```
 touch .env.example
 ```
-<<<<<<< HEAD
+
 * Criar pasta routes
 ```
 mkdir routes
@@ -260,5 +260,3 @@ router.delete('/api/:id', (request, response) => {
 });
 
 module.exports = router;
->>>>>>> ca5d5da10eedd93cb4bbaaf0441be9b315351a80
-```
