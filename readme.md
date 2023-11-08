@@ -260,3 +260,41 @@ router.delete('/api/:id', (request, response) => {
 });
 
 module.exports = router;
+
+## Criar banco de dados
+
+* Criar a database
+* dar "use" na database que foi criada
+* criar as tabelas
+
+### Criar a database
+
+````
+"create database;" (colocar o nome da database que gostaria de criar)
+```
+* CTRL + ENTER: executa o camando que está naquela linha de código
+
+### Selecionar a database
+```
+use NOME_DATABASE
+```
+
+### Criar tabela users
+```
+create table alunos(
+    id int not null auto_increment,
+    nome varchar(120) not null,
+    dt_nascimento date not null,
+    time_do_coração varchar(120)
+    primary key(id)
+);"
+```
+
+
+### Criar tabela users
+
+"create table users(
+    id int not null auto_increment
+    ds_nome varchar(120)
+    parimary key(id)
+);"
