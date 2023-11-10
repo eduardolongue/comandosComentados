@@ -269,7 +269,7 @@ module.exports = router;
 
 ### Criar a database
 
-````
+```
 "create database;" (colocar o nome da database que gostaria de criar)
 ```
 * CTRL + ENTER: executa o camando que está naquela linha de código
@@ -298,3 +298,10 @@ create table alunos(
     ds_nome varchar(120)
     parimary key(id)
 );"
+
+
+
+### Aula na qual estava sem o meu note:
+```
+app permite acessar as rotas 
+```
